@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <title>FYND</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Hello World</h1>
-    <p>
+    <p class="para1">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore,
       assumenda ratione ab non pariatur ad voluptas rerum tempora, eveniet
       repellat molestiae, adipisci ipsum consequuntur nesciunt minima?
@@ -13,5 +14,53 @@
     </p>
     <a href="www.microsoft.com">Go to Microsoft website</a>
     <img src="Designer.png" alt="" height="200" width="200" />
+    <div>
+      <!--lists in html-->
+      <ol>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+      </ol>
+      <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+      </ul>
+    </div>
+
+    <div>
+      <form action="#">
+        <label for="">First Name:</label>
+        <input type="text" /><br />
+        <label for="">Last Name:</label>
+        <input type="text" />
+      </form>
+    </div>
+
+    <h1>Library Management System</h1>
+    <form action="/submit-book" method="post">
+      <!-- Replace /submit-book with your form submission URL -->
+      <div>
+        <label for="title">Book Title:</label>
+        <input type="text" id="title" name="title" required />
+      </div>
+      <div>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+      </div>
+      <div>
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn" required />
+      </div>
+      <div>
+        <label for="pub_date">Publication Date:</label>
+        <input type="date" id="pub_date" name="pub_date" required />
+      </div>
+      <div>
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required />
+      </div>
+      <button type="submit">Add Book</button>
+    </form>
   </body>
 </html>
